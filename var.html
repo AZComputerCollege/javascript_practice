@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       "use strict";
+        var a=10;
+        let b="this is"
+        let c = a+b;
+
+        // var a=undefined;
+
+        const user={"name":"Hashim","age":20};
+
+        // a=20;
+        
+        user.profession="shopkeeper";
+
+        function add(){
+            const a=20;
+            console.log(a);
+        }
+
+        console.log("User name is ",user.name);
+        console.log(user.name,"age is ",user.age);
+        console.log(user.name,"profession is ",user.profession);
+
+        console.error("this is error");
+        console.warn("this is warning");
+        console.info("this is info");
+
+
+
+
+        // Var
+        /*
+            Var
+            - can be redeclare
+            - can be reinitialized
+            - globally available to all scopes
+            - Problem: will not show error on redeclaration
+
+            Let
+            - can be reinitialized
+            - cannot be redeclared
+            - block level: scoped based availablility
+            - can be redeclare in other scope
+            - parent declared is accessible in child scope
+
+            const
+            - cannot be redeclared
+            - cannot be reinitialized
+            - block level scope
+            - parent declared can be use in child scope
+            - can be redeclared seperate/child scope
+
+        */
+    </script>
+</body>
+</html>
