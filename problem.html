@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prolem</title>
+</head>
+<body>
+    <h1>Problem</h1>
+    <script>
+        let unitsConsumed = prompt("Please enter your total units consumed");
+        let pricePerUnit = 30;
+        let totalBillCost = unitsConsumed * pricePerUnit;
+
+        // console.log("total Bill Cost: ",totalBillCost);
+        
+        let slabNoTaxUnits = unitsConsumed * (7/100);
+        let slabFiveTaxUnits = unitsConsumed*(50/100);
+        let slabThreeTaxUnits = slabFiveTaxUnits-slabNoTaxUnits;
+        
+        // console.log("tax slabs ",slabNoTaxUnits, slabFiveTaxUnits, slabThreeTaxUnits);
+
+
+        let slabThreeTax = (slabThreeTaxUnits * pricePerUnit) * (3/100);
+        let slabFiveTax = (slabFiveTaxUnits * pricePerUnit) * (5/100);
+
+        // console.log("slab Three Tax", slabThreeTax);
+        // console.log("slab Five tax: ", slabFiveTax);
+
+        let totalTax = slabThreeTax + slabFiveTax;
+
+        let finalBillCost = totalBillCost + totalTax;
+
+
+        alert("Total Tax:"+totalTax);
+        alert("Total Bill before adding tax: "+totalBillCost);
+        alert("Total Bill after adding tax: "+ finalBillCost);
+
+    </script>
+</body>
+</html

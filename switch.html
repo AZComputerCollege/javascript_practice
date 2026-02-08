@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+</head>
+<body>
+    <h1>Switch</h1>
+
+    <script>
+        let valOne = +(prompt("Enter Your First Value"));
+        let valTwo = +(prompt("Enter your second value"));
+        let op = prompt("Enter from + - * / % **");
+
+
+        // op==1 case==1
+
+        // op=string ===case = string
+        switch(op){
+            case "1": 
+                console.log (valOne+valTwo);
+                break;
+            case 2:
+                console.log(valOne - valTwo);
+                break;
+            case "*":
+                console.log(valOne * valTwo);
+                break;
+            case "/":
+                console.log(valOne / valTwo);
+            case "%":
+                console.log(valOne % valTwo);
+                break;
+            case "**":
+                console.log(valOne ** valTwo);
+                break;
+            default:
+                console.log("Your entered operation is invalid");
+                // break;
+        }
+
+    </script>
+</body>
+</html>
