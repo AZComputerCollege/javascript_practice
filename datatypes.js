@@ -10,27 +10,27 @@
 
 
 // Object
-const obj = {name:"hassan",age:30};
+// const obj = {name:"hassan",age:30};
 
 // Object.freeze(obj);
 
 // Change value of object
-obj.name="umair";
+// obj.name="umair";
 
-obj.marks={english:20,urdu:70,pak_studies:12};
+// obj.marks={english:20,urdu:70,pak_studies:12};
 
 // console.log(obj.marks.english);
 
-obj.plus=(a,b)=>{
-    return a+b;
-}
+// obj.plus=(a,b)=>{
+//     return a+b;
+// }
 
 
 // console.log(obj.plus(3,20));
 
 
 // const arr = Array(2,3,4,5);
-const arr = [2,3,4,5,{name:"umair"}];
+// const arr = [2,3,4,5,{name:"umair"}];
 
 
 // arr[4] = 20;
@@ -48,10 +48,38 @@ const arr = [2,3,4,5,{name:"umair"}];
 // arr.unshift("javaid");
 // console.log(arr);
 
-const name = "Ubaid";
-console.log("name length: ",name);
+// const name = "Ubaid";
+// console.log("name length: ",name);
 
 // const newarr = ["yellow","pink","brown"];
 
 // console.log(newarr.copyWithin());
 
+
+
+
+
+
+// Premitive vs reference datatype
+// =========== Premitive ===========
+// let val = 40;
+// let newVal = val;
+
+// newVal+=70;
+
+// console.log("Old val: ", val);
+// console.log("new val: ", newVal);
+
+
+
+// =========== Reference ===========
+
+let arr = ["umair","ubaid","zubair"];
+let newArr = arr;
+
+
+newArr.push("hashim");
+
+
+console.log("Old val: ", arr);
+console.log("new val: ", newArr);
