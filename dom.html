@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>This is DOM</h1>
+
+
+    <div id="parentDiv">
+        <div><h1>This is above first Child</h1></div>
+        <div id="firstChildDiv">
+            <h1>First Heading</h1>
+            <h2>Second Heading</h2>
+        </div>
+    </div>
+
+
+
+    <script>
+
+        
+        function getRandomVal(a){
+            let val =Math.floor( Math.random()*5);
+            return a[val];
+        }
+        
+
+         let arr = ["red","yellow","green","blue","purple"]; 
+      
+
+
+        // setInterval(()=>{  
+        //     // let arr = ["red","yellow","green","blue","purple"]; 
+        //     document.body.style.background = getRandomVal(arr);
+        // },1000);
+
+        // setTimeout(() => document.body.style.background = "yellow", 1000);
+        
+        // console.log(document.body.style);
+
+
+
+
+        // let firstChild = document.getElementById("firstChildDiv");
+
+
+        // firstChild.lastElementChild.style.background="red";
+
+
+        // console.log(firstChild);
+        // firstChild.forEach((e)=>{
+        //     console.log(e);
+        // });
+
+
+
+
+
+
+
+
+
+
+
+        
+    </script>
+</body>
+</html>

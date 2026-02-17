@@ -1,0 +1,15 @@
+#container, #container2, #container3{
+    width: 100%;
+    margin: 10px 0px;
+    /* background-color: skyblue; */
+    display: flex;
+    justify-content: space-around;
+    gap: 6px;
+}
+
+
+.box{
+    /* background-color: aqua; */
+    width: 33%;
+    text-align: center;
+}

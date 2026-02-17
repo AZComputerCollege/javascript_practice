@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+
+<body>
+
+    <script>
+        // function declaration and initialization
+        // function add(a, b){
+        //     // console.log(a+b);
+        //     return a+b;
+        // }
+
+        const add = (...arg) => {
+            console.log(typeof arg);
+            return arg.reduce((sum, num) => sum + num, 0);
+        };
+
+
+
+
+
+        // function calling and passing paramerter
+        let addedVal = add(2, 2 , 6,4,5,6,7,8,9);
+        console.log(addedVal);
+        // let subVal = sub(7, 3);
+
+        // console.log(add(1,2));
+
+        // console.log(subVal);
+
+
+
+        // Function uses
+        // 1. to avoid function mess and follow structured programming practice
+        // 2. Reusability
+        // 3. Event action and event delegation
+    </script>
+</body>
+
+</html>
