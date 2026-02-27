@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Practice</title>
+</head>
+<body>
+    <h1>Form Practice</h1>
+
+
+    <form id="uform" name="uform">
+        <fieldset name="userFields">
+            <legend>User Info</legend>
+
+
+         <label for="">Name</label>
+        <input type="text" name="uname" value="usman">
+        
+        <br><br>
+        
+        <label for="">email</label>
+        <input type="email" name="uemail">
+
+        <br><br>
+        <label for="">Password</label>
+        <input type="password" name="upswd" >
+
+        <br><br>
+        <div class="form-control">
+            <label for="">Select Gender: </label> 
+            <br>
+            
+            <input type="radio" name="gender" id="male" value="male" checked>
+            <label for="male">Male</label>
+            <br>
+            
+            <input type="radio" name="gender" id="female" value="female" >
+            <label for="female">Female</label>
+            <br>
+
+            <input type="radio" name="gender" id="other" value="other"  >
+            <label for="other">Other</label>
+        </div>
+
+
+
+        <textarea name="message" id="message">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, et.
+        </textarea>
+        </fieldset>
+       
+    </form>
+
+
+      <!-- <form id="form">
+    <fieldset name="userFields">
+      <legend>User Login Form</legend>
+      <input name="login" type="text">
+    </fieldset>
+  </form> -->
+
+    <script src="./script.js"></script>
+</body>
+</html>

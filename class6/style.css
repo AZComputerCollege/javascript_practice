@@ -1,0 +1,17 @@
+.container{
+    width: 100%;
+    min-height: 400px;
+    background-color: orange;
+}
+
+.box{
+    background-color: blue;
+    height: 200px;
+    width: 200px;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
