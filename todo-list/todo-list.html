@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <div class="w-50 m-auto border-rounded rounded-2 p-2" style="background-color: rgb(164, 209, 255);">
+            
+            <h1 class="fs-2 fw-bold text-center p-2">ToDo List</h1>
+            
+            <form action="" id="taskForm"  class="border-bottom border-3 border-primary py-2">
+                
+                <div class="form-control d-flex gap-3"  style="background-color: rgb(164, 209, 255);">
+                   
+                    <input type="text"
+                           name="task"
+                           class="form-control"
+                           id="taskVal"
+                           placeholder="Enter Your Task">
+
+                    <button type="submit" class="btn btn-primary"
+                            id="subBtn">Submit</button>
+
+                </div>
+
+            </form>
+    
+            <h2 class="fs-4 px-2 mt-3">Task List</h2>
+            <ul id="taskList" class="mt-2 list-group px-2">
+                <li class="taskItem list-group-item bg-info p-3 d-flex justify-content-between align-items-center">
+                    <span class="taskContent fs-5">My first Task</span>
+                    <a href="#" onclick="deleteTask(this,0)"
+                       class="taskDeleteBtn btn btn-sm btn-danger">Delete</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+            integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+            crossorigin="anonymous"></script>
+
+    <script src="./todolist.js"></script>
+</body>
+
+</html>
