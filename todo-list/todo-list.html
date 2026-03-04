@@ -26,6 +26,8 @@
                            id="taskVal"
                            placeholder="Enter Your Task">
 
+                    <input type="hidden" id="editIndex" value="">
+
                     <button type="submit" class="btn btn-primary"
                             id="subBtn">Submit</button>
 
@@ -36,9 +38,13 @@
             <h2 class="fs-4 px-2 mt-3">Task List</h2>
             <ul id="taskList" class="mt-2 list-group px-2">
                 <li class="taskItem list-group-item bg-info p-3 d-flex justify-content-between align-items-center">
-                    <span class="taskContent fs-5">My first Task</span>
-                    <a href="#" onclick="deleteTask(this,0)"
-                       class="taskDeleteBtn btn btn-sm btn-danger">Delete</a>
+                    <!-- <span class="taskContent fs-5">My first Task</span>
+                    <div>
+                        <a href="#" onclick="editTask(this,0)"
+                           class="taskEditBtn btn btn-sm btn-primary">Edit</a>
+                        <a href="#" onclick="deleteTask(this,0)"
+                           class="taskDeleteBtn btn btn-sm btn-danger">Delete</a>
+                    </div> -->
                 </li>
             </ul>
         </div>
